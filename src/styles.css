@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #121315;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background: url("../src/assets/bg-cafe.jpg") no-repeat top;
+    background-size: contain;
+    color: #fef7ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    font: inherit;
+    color: #fef7ed;
+    border: none;
+    background-color: #1c1d1f;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.coffeeListing {
+    background-color: #1c1d1f;
+    padding: 20px;
+    border-radius: 20px;
+    width: 1000px;
+}
+
+.coffeeListing .header {
+    text-align: center;
+    margin: 0 auto 10px;
+}
+
+.coffeeListing .header p {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.coffeeListing .header p,
+.card .votes {
+    color: #64696f;
+}
+
+.coffeeListing .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.btn-gp {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.active {
+    background-color: #4d5562 !important;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+}
+
+.card {
+    position: relative;
+    font-weight: 600;
+}
+
+.card .popular {
+    position: absolute;
+    top: 0;
+    margin: 5px;
+    background-color: #f5c769;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 0 5px;
+    color: #121315;
+}
+
+.card .available {
+    color: rgb(247, 117, 103);
+    text-align: right;
+}
+
+.card .image {
+    border-radius: 10px;
+}
+
+.card .price {
+    text-align: right;
+    border-radius: 5px;
+    padding: 0 5px;
+    background-color: #bde3cc;
+    color: #121315;
+}
+
+.card .starRating {
+    margin-right: 5px;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
